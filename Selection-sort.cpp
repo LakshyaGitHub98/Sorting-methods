@@ -31,6 +31,9 @@ void selection_sort(int n,vector<int>arr,char ch)
                 }
             }
         }
+    }
+    else {
+        cout<<"Wrong choice !!";
     }    
 }
 int main()
@@ -46,7 +49,7 @@ int main()
     }
     cout<<"Wanna sort it in increasing order(i/I) or decreasing order(d/D) :";
     cin>>ch;
-    selection_sort(n,arr);
+    selection_sort(n,arr,ch);
     for(int i=0;i<n;i++)
     {
         cout<<arr[i]<<" ";
