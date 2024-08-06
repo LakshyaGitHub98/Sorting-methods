@@ -2,7 +2,7 @@
 using namespace std;
 void bubble_sort(int n,vector<int>arr,char ch)
 {
-    if(ch=='i'||c=='I')
+    if(ch=='i'||ch=='I')
     {
     for(int i=0;i<n;i++)
     {
@@ -40,6 +40,7 @@ void bubble_sort(int n,vector<int>arr,char ch)
 int main()
 {
     int n,a;
+    char ch;
     cin>>n;
     vector<int>arr;
     for(int i=0;i<n;i++)
@@ -47,6 +48,8 @@ int main()
         cin>>a;
         arr.push_back(a);
     }
-    bubble_sort(int n,vector<int>arr);
+    cout<<"Wanna to sort array in Increasing order (i/I) or Decreasing order (d/D): ";
+    cin>>ch;
+    bubble_sort(n,arr,ch);
     return 0;
 }
